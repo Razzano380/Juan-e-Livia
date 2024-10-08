@@ -13,10 +13,20 @@ h1 {
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    margin-top: 10px;
-    border-radius: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Em telas menores, define um limite de 80% da largura da tela */
+    }
+}
+media (max-width: 480px) {
+    img {
+        max-width: 90%; /* Em telas muito pequenas (como celulares), define o limite para 90% */
+    }
 }
 
 /* Estilos do contêiner dos corações */
