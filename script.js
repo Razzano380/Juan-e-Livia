@@ -20,6 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos
         `;
     }
+    document.getElementById('option1').addEventListener('change', function() {
+    if (this.checked) {
+        alert('Você me escolheu! 💖');
+    }
+});
+
+document.getElementById('option2').addEventListener('change', function() {
+    if (this.checked) {
+        alert('Eu te amo mesmo assim! 😘');
+    }
+});
+
 
     // Função para criar um coração flutuante
     function createHeart() {
