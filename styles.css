@@ -21,12 +21,12 @@ img {
 }
 media (max-width: 768px) {
     img {
-        max-width: 80%; /* Em telas menores, define um limite de 80% da largura da tela */
+        max-width: 60%; /* Em telas menores, define um limite de 80% da largura da tela */
     }
 }
 media (max-width: 480px) {
     img {
-        max-width: 90%; /* Em telas muito pequenas (como celulares), define o limite para 90% */
+        max-width: 60%; /* Em telas muito pequenas (como celulares), define o limite para 90% */
     }
 }
 
