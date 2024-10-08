@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página Romântica</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
+    <link rel="stylesheet" href="/Juju-e-Lulu/styles.css"> <!-- Referência ao arquivo CSS -->
 </head>
 <body>
     <h1>Foto do casal</h1>
@@ -16,6 +16,6 @@
     <!-- Div para exibir a contagem de tempo -->
     <div id="time-counter" class="time-counter"></div>
 
-    <script src="script.js"></script> <!-- Referência ao arquivo JavaScript -->
+    <script src="/Juju-e-Lulu/script.js"></script> <!-- Referência ao arquivo JavaScript -->
 </body>
 </html>
