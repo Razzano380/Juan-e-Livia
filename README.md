@@ -22,7 +22,7 @@
 </head>
 <body>
     <h1>Nosso Tempo Juntos</h1>
-    <img src="<img src="https://i.imgur.com/VcaH8LA.jpg" alt="Foto do casal">
+    <img src="<https://i.imgur.com/VcaH8LA.jpeg" alt="Foto do casal">
     <div id="timer"></div>
 
     <script>
