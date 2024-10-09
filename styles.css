@@ -3,7 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     text-align: center;
-    overflow: hidden; /* Para que os corações flutuem sem rolagem */
+    overflow-y: auto ; 
+scroll-behavior : smooth;
 }
 
 h1 {
