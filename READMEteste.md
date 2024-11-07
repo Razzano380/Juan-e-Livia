@@ -9,7 +9,7 @@
 <body>
     <h1>Foto do casal</h1>
     <!-- Caminho atualizado da imagem -->
-    <img src=" <img src="/Juju-e-Lulu/WhatsApp Image 2024-10-08 at 00.32.23.jpeg" alt="Foto do casal">
+    <img src=" <img src="/Juju-e-Lulu/luana.jpeg" alt="Foto do casal">
     
     <!-- Div para os corações flutuantes -->
     <div class="hearts-container"></div>
