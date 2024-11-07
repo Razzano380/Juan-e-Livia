@@ -9,7 +9,7 @@
 <body>
     <h1>Foto do casal</h1>
     <!-- Caminho atualizado da imagem -->
-    <img src="/Juju-e-Lulu/VcaH8LA.jpeg" alt="Foto do casal">
+    <img src=" <img src="/VcaH8LA.jpeg" alt="Foto do casal" alt="Foto do casal">
     
     <!-- Div para os corações flutuantes -->
     <div class="hearts-container"></div>
