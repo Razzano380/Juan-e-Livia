@@ -166,7 +166,7 @@ img {
     border-collapse: collapse;
 }
 
-.pros-cons-table2 th, .pros-cons-table td {
+.pros-cons-table2 th, .pros-cons-table2 td {
     padding: 8px;
     text-align: left;
     border: 1px solid #d6336c;
