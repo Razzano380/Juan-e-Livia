@@ -185,5 +185,9 @@ img {
     background-color: #f0a3c1;
     color: #ffffff  
 }
-
+label{
+    color: #d6336c; /* Define a cor do texto das labels */
+    font-weight: bold;
+    margin-left: 5px;
+}
 
