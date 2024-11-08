@@ -1,7 +1,7 @@
 /* Definições de estilo gerais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000000;
     text-align: center;
     overflow: hidden; /* Para que os corações flutuem sem rolagem */
 }
@@ -78,7 +78,6 @@ img {
     margin-top: 20px;
     font-weight: bold;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     display: inline-block;
 }/* Estilizando a contagem até o dia do namoro */
@@ -88,7 +87,6 @@ img {
     margin-top: 20px;
     font-weight: bold;
     padding: 10px;
-    background-color: rgba(255, 182, 193, 0.8); /* Um fundo rosa claro */
     border-radius: 10px;
     display: inline-block;
 }
