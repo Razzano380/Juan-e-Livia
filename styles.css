@@ -26,3 +26,14 @@
         opacity: 0;
     }
 }
+/* Estilizando a contagem de tempo */
+.time-counter {
+    font-size: 24px;
+    color: #d6336c;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+}
