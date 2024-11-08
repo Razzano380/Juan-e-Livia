@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         timeCounter.innerHTML = `
             Estamos juntos há: ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos
         `;
+         timeCounter.style.color = "#FF69B4"; // Cor rosa
     }
 
     // Função para calcular a contagem regressiva até a data de namoro oficial
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         countdownToDate.innerHTML = `
             Faltam: ${days} dias, ${hours} horas, ${minutes} minutos, ${seconds} segundos para o namoro oficial
         `;
+         timeCounter.style.color = "#FF69B4"; // Cor rosa
     }
 
     // Função para criar um coração flutuante
