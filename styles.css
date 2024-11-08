@@ -90,3 +90,94 @@ img {
     border-radius: 10px;
     display: inline-block;
 }
+/* Estilização do contêiner do nome */
+.name-container {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d6336c;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Esconder a tabela por padrão */
+.pros-cons-table {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d6336c;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+    width: 300px;
+}
+
+/* Exibir a tabela ao passar o mouse sobre o nome */
+.name-container:hover .pros-cons-table {
+    display: block;
+}
+
+/* Estilização da tabela */
+.pros-cons-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pros-cons-table th, .pros-cons-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #d6336c;
+}
+
+.pros-cons-table th {
+    background-color: #f0a3c1;
+    color: #ffffff;
+}
+
+.pros-cons-table td {
+    color: #555;
+}
+
+/* Esconder a tabela por padrão */
+.pros-cons-table2 {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #d6336c;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
+    width: 300px;
+}
+
+/* Exibir a tabela ao passar o mouse sobre o nome */
+.name-container:hover .pros-cons-table2 {
+    display: block;
+}
+
+/* Estilização da tabela */
+.pros-cons-table2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pros-cons-table2 th, .pros-cons-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #d6336c;
+}
+
+.pros-cons-table2 th {
+    background-color: #f0a3c1;
+    color: #ffffff;
+}
+
+.pros-cons-table2 td {
+    color: #555;
+}
+
