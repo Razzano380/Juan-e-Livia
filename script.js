@@ -62,36 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTime, 1000); // Atualiza a contagem de tempo a cada segundo
     setInterval(updateCountdown, 1000); // Atualiza a contagem regressiva a cada segundo
     
-    // Função chamada pela API YouTube quando está pronta
-let player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtube-player', {
-        videoId: 'PnAMEe0GGG8',  // ID do vídeo
-        playerVars: {
-            autoplay: 0,         // Deixe em 0; o autoplay será feito manualmente
-            start: 36,           // Início no segundo 36
-        },
-        events: {
-            'onReady': onPlayerReady
+    
+});
+// Espera até que o DOM esteja carregado
+document.addEventListener("DOMContentLoaded", function () {
+    const noOption = document.getElementById("answer-no");
+
+    // Adiciona o evento ao checkbox "NÃO"
+    noOption.addEventListener("change", function () {
+        if (noOption.checked) {
+            // Redireciona para o link do YouTube a partir de 36 segundos
+            window.location.href = "https://www.youtube.com/watch?v=PnAMEe0GGG8&t=36s";
         }
     });
-}
-
-// Função chamada quando o vídeo está pronto para ser reproduzido
-function onPlayerReady(event) {
-    // Podemos deixar essa função vazia, pois vamos iniciar o vídeo com `playSong()`
-}
-
-function handleAnswer(answer) {
-    if (answer.value === "no") {
-        playSong();
-    }
-}
-
-function playSong() {
-    if (player && player.playVideo) {
-        player.playVideo();
-    }
-}
-    
 });
