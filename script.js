@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     noOption.addEventListener("change", function () {
         if (noOption.checked) {
             // Redireciona para o link do YouTube a partir de 36 segundos
-            window.location.href = "https://www.youtube.com/watch?v=PnAMEe0GGG8&t=36s";
+            window.location.href = "https://www.youtube.com/watch?v=PnAMEe0GGG8&t=35s";
         }
     });
 });
