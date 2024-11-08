@@ -61,4 +61,37 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(createHeart, 300); // Um novo coração a cada 300 milissegundos
     setInterval(updateTime, 1000); // Atualiza a contagem de tempo a cada segundo
     setInterval(updateCountdown, 1000); // Atualiza a contagem regressiva a cada segundo
+    
+    // Função chamada pela API YouTube quando está pronta
+let player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-player', {
+        videoId: 'PnAMEe0GGG8',  // ID do vídeo
+        playerVars: {
+            autoplay: 0,         // Deixe em 0; o autoplay será feito manualmente
+            start: 36,           // Início no segundo 36
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+// Função chamada quando o vídeo está pronto para ser reproduzido
+function onPlayerReady(event) {
+    // Podemos deixar essa função vazia, pois vamos iniciar o vídeo com `playSong()`
+}
+
+function handleAnswer(answer) {
+    if (answer.value === "no") {
+        playSong();
+    }
+}
+
+function playSong() {
+    if (player && player.playVideo) {
+        player.playVideo();
+    }
+}
+    
 });
