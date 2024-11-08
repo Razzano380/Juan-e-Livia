@@ -1,13 +1,56 @@
+/* Definições de estilo gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    overflow: hidden; /* Para que os corações flutuem sem rolagem */
+}
+
+h1 {
+    color: #d6336c; /* Cor que remete ao tema romântico */
+    font-size: 3em;
+    margin-top: 50px;
+}
+html, body {
+    height: 100%;  /* Define a altura de 100% para garantir que o conteúdo ocupe a página inteira */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;  /* Adiciona a barra de rolagem vertical */
+    scroll-behavior: smooth; /* Faz a rolagem ser suave */
+}
+
+img {
+    max-width: 100%;   /* A imagem nunca ultrapassará 100% da largura da tela */
+    height: auto;      /* A altura será ajustada automaticamente para manter a proporção */
+    margin: 0 auto;    /* Centraliza a imagem horizontalmente */
+    display: block;    /* Garante que a imagem seja exibida como um bloco e ocupe toda a largura disponível */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+
+/* Adiciona uma regra para ajustar ainda mais o tamanho da imagem em telas menores */
+@media (max-width: 768px) {
+    img {
+        max-width: 80%; /* Em telas menores, define um limite de 80% da largura da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 90%; /* Em telas muito pequenas (como celulares), define o limite para 90% */
+    }
+}
+
+/* Estilos do contêiner dos corações */
 .hearts-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
-    overflow: hidden;
+    pointer-events: none; /* Para garantir que o usuário possa interagir com o conteúdo da página */
 }
 
+/* Estilo dos corações */
 .heart {
     position: absolute;
     font-size: 100px;
@@ -16,16 +59,18 @@
     transform: rotate(0deg);
 }
 
+/* Animação dos corações flutuando */
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
         opacity: 1;
     }
     100% {
-        transform: translateY(-100vh);
+        transform: translateY(-100vh) scale(1.5);
         opacity: 0;
     }
 }
+
 /* Estilizando a contagem de tempo */
 .time-counter {
     font-size: 24px;
