@@ -81,4 +81,14 @@ img {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     display: inline-block;
+}/* Estilizando a contagem até o dia do namoro */
+.countdown-to-date {
+    font-size: 24px;
+    color: #ff69b4; /* Escolha um rosa mais claro ou diferente */
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(255, 182, 193, 0.8); /* Um fundo rosa claro */
+    border-radius: 10px;
+    display: inline-block;
 }
