@@ -99,15 +99,36 @@
             </table>
         </div>
         </div>  
-    <h1> Você aceita namorar comigo ? </h1>
-         <!-- Checkbox de pergunta -->
-   <label>
-            SIM <input type="radio" name="answer" value="yes" id="answer-yes"class="checkbox-answer">
+   <h1> Você aceita namorar comigo ? </h1>
+        <!-- Checkbox para a primeira escolha -->
+    <label>
+        <input type="checkbox" id="confirm-yes">
+        Sim
+    </label>
+    <label>
+        <input type="checkbox" id="confirm-no">
+        Não
+    </label>
+
+    <!-- Caixa de alerta de confirmação -->
+    <div id="alert-box" class="hidden">
+        <p>AVISO: VOCÊ TEM CERTEZA?</p>
+        <label>
+            <input type="checkbox" id="confirm-again-yes">
+            Sim
         </label>
         <label>
-            NÃO <input type="radio" name="answer" value="no" id="answer-no"class="checkbox-answer">
+            <input type="checkbox" id="confirm-again-no">
+            Não
         </label>
-        
+    </div>
+
+    <!-- Contrato de namoro -->
+    <div id="contract-box" class="hidden">
+        <h2>Contrato de Namoro</h2>
+        <p>Aceite os termos e condições para iniciar nosso namoro.</p>
+        <button id="agree-contract">Assinar Contrato</button>
+    </div>
 
     <script src="script.js"></script> <!-- Referência ao arquivo JavaScript -->
 </body>
