@@ -76,3 +76,53 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona os elementos usando os IDs
+    const yesCheckbox = document.getElementById('confirm-yes');
+    const alertBox = document.getElementById('alert-box');
+    const contractBox = document.getElementById('contract-box');
+    const confirmAgainYes = document.getElementById('confirm-again-yes');
+    const confirmAgainNo = document.getElementById('confirm-again-no');
+    const agreeContract = document.getElementById('agree-contract');
+
+    // Verifica se o checkbox "Sim" existe antes de adicionar o evento
+    if (yesCheckbox) {
+        yesCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Primeiro 'Sim' selecionado");  // Depuração
+                alertBox.classList.remove('hidden');  // Exibe o alerta
+            }
+        });
+    }
+
+    // Verifica se o checkbox "confirmAgainYes" existe antes de adicionar o evento
+    if (confirmAgainYes) {
+        confirmAgainYes.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Segundo 'Sim' selecionado no alerta");  // Depuração
+                alertBox.classList.add('hidden');   // Oculta o alerta
+                contractBox.classList.remove('hidden');  // Exibe o contrato
+            }
+        });
+    }
+
+    // Verifica se o checkbox "confirmAgainNo" existe antes de adicionar o evento
+    if (confirmAgainNo) {
+        confirmAgainNo.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Alerta 'Não' selecionado");  // Depuração
+                alertBox.classList.add('hidden');  // Oculta o alerta
+            }
+        });
+    }
+
+    // Verifica se o botão "agreeContract" existe antes de adicionar o evento
+    if (agreeContract) {
+        agreeContract.addEventListener('click', function() {
+            console.log("Contrato assinado");  // Depuração
+            alert("Contrato de Namoro assinado com sucesso! ❤️");
+            contractBox.classList.add('hidden');  // Oculta o contrato após assinado
+        });
+    }
+});
+
