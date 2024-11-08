@@ -10,8 +10,10 @@
 
 .heart {
     position: absolute;
-    font-size: 2rem;
-    animation: float 5s ease-in-out infinite;
+    font-size: 100px;
+    color: #ff0000;
+    animation: float 5s infinite;
+    transform: rotate(0deg);
 }
 
 @keyframes float {
