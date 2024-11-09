@@ -65,26 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
-
-    // Verifica se o checkbox "confirmAgainNo" existe antes de adicionar o evento
-    if (confirmAgainNo) {
-        confirmAgainNo.addEventListener('change', function() {
-            if (this.checked) {
-                console.log("Alerta 'Não' selecionado");  // Depuração
-                alertBox.classList.add('hidden');  // Oculta o alerta
-            }
-        });
-    }
-
-    // Verifica se o botão "agreeContract" existe antes de adicionar o evento
-    if (agreeContract) {
-        agreeContract.addEventListener('click', function() {
-            console.log("Contrato assinado");  // Depuração
-            alert("Contrato de Namoro assinado com sucesso! ❤️");
-            contractBox.classList.add('hidden');  // Oculta o contrato após assinado
-        });
-    }
-});
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona os elementos usando os IDs
     const yesCheckbox = document.getElementById('confirm-yes');
