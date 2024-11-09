@@ -64,21 +64,31 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
 });
-// Espera até que o DOM esteja carregado
-document.addEventListener("DOMContentLoaded", function () {
-    const noOption = document.getElementById("answer-no");
 
-    // Adiciona o evento ao checkbox "NÃO"
-    noOption.addEventListener("change", function () {
-        if (noOption.checked) {
-            // Redireciona para o link do YouTube a partir de 36 segundos
-            window.location.href = "https://www.youtube.com/watch?v=PnAMEe0GGG8&t=35s";
-        }
-    });
+
+    // Verifica se o checkbox "confirmAgainNo" existe antes de adicionar o evento
+    if (confirmAgainNo) {
+        confirmAgainNo.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Alerta 'Não' selecionado");  // Depuração
+                alertBox.classList.add('hidden');  // Oculta o alerta
+            }
+        });
+    }
+
+    // Verifica se o botão "agreeContract" existe antes de adicionar o evento
+    if (agreeContract) {
+        agreeContract.addEventListener('click', function() {
+            console.log("Contrato assinado");  // Depuração
+            alert("Contrato de Namoro assinado com sucesso! ❤️");
+            contractBox.classList.add('hidden');  // Oculta o contrato após assinado
+        });
+    }
 });
 document.addEventListener("DOMContentLoaded", function() {
     // Seleciona os elementos usando os IDs
     const yesCheckbox = document.getElementById('confirm-yes');
+    const noCheckbox = document.getElementById('confirm-no');  // Primeiro "Não" checkbox
     const alertBox = document.getElementById('alert-box');
     const contractBox = document.getElementById('contract-box');
     const confirmAgainYes = document.getElementById('confirm-again-yes');
@@ -91,6 +101,16 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.checked) {
                 console.log("Primeiro 'Sim' selecionado");  // Depuração
                 alertBox.classList.remove('hidden');  // Exibe o alerta
+            }
+        });
+    }
+
+    // Verifica se o checkbox "Não" existe antes de adicionar o evento
+    if (noCheckbox) {
+        noCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Primeiro 'Não' selecionado");  // Depuração
+                window.location.href = "https://www.youtube.com/watch?v=PnAMEe0GGG8&t=36s";  // Redireciona para o YouTube
             }
         });
     }
@@ -125,4 +145,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
