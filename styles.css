@@ -1,9 +1,27 @@
 /* Definições de estilo gerais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
     text-align: center;
     overflow: hidden; /* Para que os corações flutuem sem rolagem */
+}
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Você pode variar as cores */
+    opacity: 0.8;
+    animation: fallConfetti linear infinite;
+}
+
+@keyframes fallConfetti {
+    from {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 #background-video {
