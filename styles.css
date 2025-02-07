@@ -48,13 +48,6 @@ html, body {
     scroll-behavior: smooth; /* Faz a rolagem ser suave */
 }
 
-img {
-    max-width: 100%;   /* A imagem nunca ultrapassará 100% da largura da tela */
-    height: auto;      /* A altura será ajustada automaticamente para manter a proporção */
-    margin: 0 auto;    /* Centraliza a imagem horizontalmente */
-    display: block;    /* Garante que a imagem seja exibida como um bloco e ocupe toda a largura disponível */
-    border-radius: 15px; /* Adiciona bordas arredondadas */
-}
 
 /* Adiciona uma regra para ajustar ainda mais o tamanho da imagem em telas menores */
 @media (max-width: 768px) {
