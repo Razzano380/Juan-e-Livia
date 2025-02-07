@@ -6,6 +6,17 @@ body {
     overflow: hidden; /* Para que os corações flutuem sem rolagem */
 }
 
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Para o vídeo ficar no fundo */
+}
+
+
 h1 {
     color: #d6336c; /* Cor que remete ao tema romântico */
     font-size: 3em;
