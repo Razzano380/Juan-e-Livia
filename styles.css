@@ -3,6 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     overflow: hidden; /* Para que os corações flutuem sem rolagem */
+    background-color: pink !important;
 }
 .confetti {
     position: absolute;
