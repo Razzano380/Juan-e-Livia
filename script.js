@@ -20,27 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateTimer, 1000);
   updateTimer();
 
-  // Balões e confetes
-  function createBalloon() {
-    const balloon = document.createElement("div");
-    balloon.classList.add("balloon");
-    balloon.style.left = Math.random() * 100 + "vw";
-    balloon.style.animationDuration = Math.random() * 3 + 3 + "s";
-    document.body.appendChild(balloon);
-    setTimeout(() => balloon.remove(), 5000);
-  }
+  // Corações
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerText = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+    document.body.appendChild(heart);
 
-  function createConfetti() {
-    const confetti = document.createElement("div");
-    confetti.classList.add("confetti");
-    confetti.style.left = Math.random() * 100 + "vw";
-    confetti.style.animationDuration = Math.random() * 2 + 3 + "s";
-    document.body.appendChild(confetti);
-    setTimeout(() => confetti.remove(), 5000);
-  }
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
 
-  setInterval(createBalloon, 500);
-  setInterval(createConfetti, 200);
+setInterval(createHeart, 300);
+
 
   // Checkboxes românticos
   const yesCheckbox = document.getElementById('confirm-yes');
