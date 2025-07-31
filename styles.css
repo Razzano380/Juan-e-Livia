@@ -12,6 +12,12 @@ body {
     opacity: 0.8;
     animation: fallConfetti linear infinite;
 }
+#timer {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #e91e63;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
 
 @keyframes fallConfetti {
     from {
