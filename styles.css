@@ -74,7 +74,7 @@ body {
 
 h1 {
     color: #d6336c; /* Cor que remete ao tema romântico */
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 50px;
 }
 html, body {
@@ -152,7 +152,7 @@ html, body {
 /* Estilização do contêiner do nome */
 .name-container {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #d6336c;
     position: relative;
