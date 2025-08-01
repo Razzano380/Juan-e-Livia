@@ -1,117 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página Romântica</title>
-   <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
-   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Página Romântica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-   
-    <h1>Tempo desde que nos conhecemos : </h1>
-<p id="timer"></p>
 
- 
-    
-
-
-    <!-- Caminho atualizado da imagem -->
-   <video autoplay muted loop id="background-video">
+  <!-- Fundo em vídeo -->
+  <video autoplay muted loop id="background-video">
     <source src="Juan-e-Livia/pixverse%2Fmp4%2Fmedia%2Fweb%2Ffd353c56-7cf3-41c9-b4d6-5b77ec904ddc_seed994291490.mp4" type="video/mp4">
-       Seu navegador não suporta vídeos.
-</video>
+    Seu navegador não suporta vídeos.
+  </video>
 
-    
-    <!-- Div para os corações flutuantes -->
-   <div class="confetti-container"></div>
- 
+  <!-- Título e Timer -->
+  <h1>Tempo desde que nos conhecemos :</h1>
+  <p id="timer"></p>
 
-<!-- Nome "Juan" para exibir a tabela ao passar o mouse -->
-<div class="name-container">
-    <span class="name-hover">Vantagens/Desvantages de namorar o Juan</span>
+  <!-- Confetes (deixe o JS criar os elementos dentro dessa div) -->
+  <div class="confetti-container"></div>
 
-    <!-- Tabela com prós e contras que aparece ao passar o mouse -->
+  <!-- Tabela com prós e contras -->
+  <div class="name-container">
+    <span class="name-hover">Vantagens/Desvantagens de namorar o Juan</span>
     <div class="pros-cons-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Prós</th>
-                    <th>Contras</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Carinhoso</td>
-                    <td>Teimoso às vezes</td>
-                </tr>
-                <tr>
-                    <td>Engraçado</td>
-                    <td>Se irrita quando está com fome</td>
-                </tr>
-                <tr>
-                    <td>Bom ouvinte</td>
-                    <td>Adora uma fofoquinha</td>
-                </tr>
-
-                <tr>
-                    <td>Nerdola</td>
-                    <td>Nerdola até demais </td>
-                </tr>
-                    
-                   
-                <!-- Adicione mais linhas conforme necessário -->
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Prós</th>
+            <th>Contras</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carinhoso</td>
+            <td>Teimoso às vezes</td>
+          </tr>
+          <tr>
+            <td>Engraçado</td>
+            <td>Se irrita quando está com fome</td>
+          </tr>
+          <tr>
+            <td>Bom ouvinte</td>
+            <td>Adora uma fofoquinha</td>
+          </tr>
+          <tr>
+            <td>Nerdola</td>
+            <td>Nerdola até demais</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
-<div>
+  </div>
 
-</div>
-      
-   <h1> Você aceita namorar comigo ? </h1>
-        <!-- Checkbox para a primeira escolha -->
+  <!-- Pedido de namoro 💍 -->
+  <h1>Você aceita namorar comigo?</h1>
+  <label>
+    <input type="checkbox" id="confirm-yes" />
+    Sim
+  </label>
+  <label>
+    <input type="checkbox" id="confirm-no" />
+    Não
+  </label>
+
+  <!-- Alerta -->
+  <div id="alert-box" class="hidden">
+    <p>AVISO: VOCÊ TEM CERTEZA?</p>
     <label>
-        <input type="checkbox" id="confirm-yes">
-        Sim
+      <input type="checkbox" id="confirm-again-yes" />
+      Sim
     </label>
     <label>
-        <input type="checkbox" id="confirm-no">
-        Não
+      <input type="checkbox" id="confirm-again-no" />
+      Não
     </label>
+  </div>
 
-    <!-- Caixa de alerta de confirmação -->
-    <div id="alert-box" class="hidden">
-        <p>AVISO: VOCÊ TEM CERTEZA?</p>
-        <label>
-            <input type="checkbox" id="confirm-again-yes">
-            Sim
-        </label>
-        <label>
-            <input type="checkbox" id="confirm-again-no">
-            Não
-        </label>
-    </div>
+  <!-- Contrato de namoro -->
+  <div id="contract-box" class="hidden">
+    <h2>Contrato de Namoro</h2>
+    <p>Aceite os termos e condições para iniciar nosso namoro.</p>
+    <button id="agree-contract">Assinar Contrato</button>
+  </div>
 
-    <!-- Contrato de namoro -->
-    <div id="contract-box" class="hidden">
-        <h2>Contrato de Namoro</h2>
-        <p>Aceite os termos e condições para iniciar nosso namoro.</p>
-        <button id="agree-contract">Assinar Contrato</button>
-    </div>
-   <div class="fotos-flutuantes">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.46_0c04e143.jpg" alt="nós dois">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.47_3c2251bf.jpg" alt="ela na exposição">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.47_8e4c5b97.jpg" alt="maçã do amor">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.47_9b6d5149.jpg" alt="beijo na testa">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.47_75acd10e.jpg" alt="pôr do sol">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.48_9a2b27a1.jpg" alt="selfie romântica">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.48_205d7d6e.jpg" alt="espelho com coração">
-  <img src="Imagem do WhatsApp de 2025-07-31 à(s) 20.58.48_c6547f49.jpg" alt="abraço no shopping">
-</div>
+  <!-- Fotos flutuantes -->
+  <div class="fotos-flutuantes">
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.46_0c04e143.jpg" class="foto" alt="nós dois" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.47_3c2251bf.jpg" class="foto" alt="ela na exposição" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.47_8e4c5b97.jpg" class="foto" alt="maçã do amor" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.47_9b6d5149.jpg" class="foto" alt="beijo na testa" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.47_75acd10e.jpg" class="foto" alt="pôr do sol" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.48_9a2b27a1.jpg" class="foto" alt="selfie romântica" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.48_205d7d6e.jpg" class="foto" alt="espelho com coração" />
+    <img src="Imagem%20do%20WhatsApp%20de%202025-07-31%20à(s)%2020.58.48_c6547f49.jpg" class="foto" alt="abraço no shopping" />
+  </div>
 
-    
-    <script src="script.js" defer></script>  <!-- Referência ao arquivo JavaScript -->
+  <!-- JS -->
+  <script src="script.js" defer></script>
 </body>
 </html>
